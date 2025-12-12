@@ -1,0 +1,151 @@
+.floating-elements {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.float-square {
+  position: absolute;
+  background: var(--primary-burgundy);
+  border-radius: 3px;
+}
+
+/* Top left cluster */
+.sq-1 {
+  width: 12px;
+  height: 12px;
+  top: 15%;
+  left: 5%;
+  opacity: 0.6;
+  animation: float 6s ease-in-out infinite;
+}
+
+.sq-2 {
+  width: 8px;
+  height: 8px;
+  top: 18%;
+  left: 7%;
+  opacity: 0.4;
+  animation: floatReverse 5s ease-in-out infinite 0.5s;
+}
+
+.sq-3 {
+  width: 6px;
+  height: 6px;
+  top: 12%;
+  left: 8%;
+  opacity: 0.3;
+  animation: float 7s ease-in-out infinite 1s;
+}
+
+/* Top right cluster */
+.sq-4 {
+  width: 14px;
+  height: 14px;
+  top: 10%;
+  right: 8%;
+  opacity: 0.5;
+  animation: floatReverse 6s ease-in-out infinite;
+}
+
+.sq-5 {
+  width: 10px;
+  height: 10px;
+  top: 15%;
+  right: 5%;
+  opacity: 0.4;
+  animation: float 5s ease-in-out infinite 0.8s;
+}
+
+.sq-6 {
+  width: 6px;
+  height: 6px;
+  top: 8%;
+  right: 12%;
+  opacity: 0.3;
+  animation: floatReverse 7s ease-in-out infinite 0.3s;
+}
+
+/* Middle left */
+.sq-7 {
+  width: 10px;
+  height: 10px;
+  top: 45%;
+  left: 3%;
+  opacity: 0.5;
+  animation: float 8s ease-in-out infinite 1.2s;
+}
+
+.sq-8 {
+  width: 8px;
+  height: 8px;
+  top: 50%;
+  left: 6%;
+  opacity: 0.3;
+  animation: floatReverse 6s ease-in-out infinite;
+}
+
+/* Middle right */
+.sq-9 {
+  width: 12px;
+  height: 12px;
+  top: 55%;
+  right: 4%;
+  opacity: 0.5;
+  animation: floatReverse 7s ease-in-out infinite 0.5s;
+}
+
+.sq-10 {
+  width: 8px;
+  height: 8px;
+  top: 48%;
+  right: 7%;
+  opacity: 0.4;
+  animation: float 5s ease-in-out infinite 1s;
+}
+
+/* Bottom clusters */
+.sq-11 {
+  width: 10px;
+  height: 10px;
+  bottom: 20%;
+  left: 8%;
+  opacity: 0.4;
+  animation: float 6s ease-in-out infinite 0.3s;
+}
+
+.sq-12 {
+  width: 6px;
+  height: 6px;
+  bottom: 15%;
+  left: 5%;
+  opacity: 0.3;
+  animation: floatReverse 5s ease-in-out infinite;
+}
+
+.sq-13 {
+  width: 12px;
+  height: 12px;
+  bottom: 25%;
+  right: 6%;
+  opacity: 0.5;
+  animation: floatReverse 8s ease-in-out infinite 0.8s;
+}
+
+.sq-14 {
+  width: 8px;
+  height: 8px;
+  bottom: 18%;
+  right: 10%;
+  opacity: 0.35;
+  animation: float 6s ease-in-out infinite 1.5s;
+}
+
+@media (max-width: 768px) {
+  .float-square {
+    opacity: 0.2 !important;
+  }
+}
+
