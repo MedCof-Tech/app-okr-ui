@@ -3,6 +3,7 @@
   background: var(--bg-cream);
   position: relative;
   overflow: hidden;
+  z-index: 1;
 }
 
 .okr-section::before {
